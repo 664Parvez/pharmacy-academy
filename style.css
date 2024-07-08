@@ -46,6 +46,7 @@ body {
 /* Navbar */
 #navbar {
     padding: 5px 20px;
+    border-bottom: 1px solid var(--logo-first-color);
 }
 #navbar #logo img {
     width: 100%;
@@ -63,6 +64,21 @@ body {
 }
 
 
+
+/* Contact Us */
+#contact_first_section {
+    margin-top: 30px;
+}
+#contact_first_section .btn {
+    border: 2px solid var(--logo-second-color);
+    padding: 10px 30px;
+    font-weight: 600;
+}
+#contact_first_section .btn:hover {
+    background-color: var(--logo-first-color);
+    color: var(--white-color);
+    box-shadow: 0 0 30px var(--logo-second-color);
+}
 
 /* Footer */
 #footer {
@@ -83,6 +99,10 @@ body {
     color: var(--white-color);
     margin-bottom: 25px;
     text-decoration: underline;
+}
+#footer #footer_quick_link ul li a{
+    text-decoration: none;
+    color: var(--white-color);
 }
 #footer #footer_phone_number ul li  {
     margin: 10px 0;
