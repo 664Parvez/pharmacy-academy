@@ -156,7 +156,7 @@ body {
     border-right: 1px solid var(--white-color);
 }
 
-
+/* Why Become */
 #why_become_section {
     background: var(--background-color);
     color: var(--white-color);
@@ -184,11 +184,13 @@ body {
     box-shadow: 0 0 30px var(--logo-first-color);
 }
 
+
+/* About Us */
 #about_navbar_section {
     background: var(--background-color);
     color: var(--white-color);
     padding: 20px 0;
-
+    z-index: 999;
     position: sticky;
     top: 0;
 }
@@ -211,16 +213,46 @@ body {
     font-size: 40px;
     font-weight: 600;
 }
+
 #about_four_items {
     border: 2px solid var(--logo-first-color);
-    padding: 20px;
-    height: 180px;
     margin: 15px 0;
+    padding: 10px 20px;
+    height: 190px;
+    border-radius: 15px;
 }
 #about_four_item_number {
-    display: flex;
-    padding: 5px;
-    background-color: var(--logo-first-color);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--logo-second-color);
+}
+
+
+/* Why Choose us */
+#why_choose {
+    background: var(--background-color);
+    color: var(--white-color);
+    padding: 50px 0; 
+}
+#why_choose h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#why_choose .btn {
+    outline: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+#why_choose .btn:hover {
+    background-color: var(--white-color);
+    color: var(--logo-first-color);
+}
+#why_choose .card {
+    padding: 20px;
+    color: #0E2B85;
+}
+#why_choose .card li {
+    margin: 15px 0;
 }
 
 
@@ -351,7 +383,15 @@ body {
     #home_section #batch_start_date .batch_flex {
         width: 50%;
     }
-
+    #about_navbar_section {
+        display: none;
+    }
+    #about_four_items {
+        height: auto;
+    } 
+    #why_choose .card {
+        margin-top: 30px;
+    }
     #contact_second_section h3 {
         font-size: 30px;
     }
