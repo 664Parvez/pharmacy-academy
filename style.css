@@ -7,6 +7,7 @@
     --logo-first-color: #0E2B85;
     --logo-second-color: #0E2B85;
     --yellow-color: #ffee00;
+    --gray-color: #dddddd;
 }
 
 ul {
@@ -149,6 +150,10 @@ body {
     background-color: var(--background-color);
     box-shadow: 0 0 30px var(--logo-second-color);
 }
+#home_section img {
+    width: 100%;
+    filter: drop-shadow(2px 2px 30px var(--logo-second-color));
+}
 #home_section #batch_start_date p {
     margin-bottom: 0;
 }
@@ -193,6 +198,7 @@ body {
     z-index: 999;
     position: sticky;
     top: 0;
+    border-bottom: 2px solid var(--yellow-color);
 }
 .about_navbar_menu ul {
     display: flex;
@@ -203,6 +209,9 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: var(--white-color);
+}
+.about_navbar_menu ul li a:hover {
+    color: var(--yellow-color);
 }
 
 #about {
@@ -246,6 +255,7 @@ body {
 #why_choose .btn:hover {
     background-color: var(--white-color);
     color: var(--logo-first-color);
+    box-shadow: 0 0 30px var(--logo-first-color);
 }
 #why_choose .card {
     padding: 20px;
@@ -253,6 +263,109 @@ body {
 }
 #why_choose .card li {
     margin: 15px 0;
+}
+
+/* Comes with our course */
+#our_course {
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 50px 0; 
+}
+#our_course h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#our_course_four_div_two {
+    margin-top: 100px;
+}
+#our_course_four_div_four {
+    margin-top: 100px;
+}
+
+/* Curriculam */
+#curriculam {
+    background: var(--background-color);
+    color: var(--white-color);
+    padding: 50px 0; 
+}
+#curriculam h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Instruction */
+#instructor {
+    padding: 50px 0; 
+}
+#instructor h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#instructor h4 {
+    color: var(--logo-second-color);
+    font-weight: 600;
+    font-size: 30px;
+}
+#instructor ul li {
+    margin: 8px 0;
+}
+#instructor ul li i {
+    color: var(--logo-first-color);
+    font-weight: 600;
+}
+
+/* Testimonial */
+#testimonial {
+    padding: 50px 0;
+}
+#testimonial h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* Examination */
+#examination {
+    padding: 50px 0;
+}
+#examination h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* FAQ */
+#faq {
+    padding: 50px 0;
+}
+#faq h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* Our Service */
+#our_service {
+    padding: 50px 0;
+    background-color: var(--gray-color);
+}
+#our_service h3 {
+    font-weight: 600;
+}
+#our_service .service_beyond_img img {
+    background-color: var(--logo-first-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#our_service h5 {
+    font-weight: 600;
 }
 
 
@@ -383,6 +496,9 @@ body {
     #home_section #batch_start_date .batch_flex {
         width: 50%;
     }
+    #why_become_section h2 {
+        font-size: 30px;
+    }
     #about_navbar_section {
         display: none;
     }
@@ -392,6 +508,25 @@ body {
     #why_choose .card {
         margin-top: 30px;
     }
+    #our_course_four_div_two {
+        margin-top: 0px;
+    }
+    #our_course_four_div_four {
+        margin-top: 0px;
+    }
+    #instructor_info {
+        display: block !important;
+    }
+    #instructor h4 {
+        margin-top: 30px;
+    }
+
+
+
+    #our_service .service_beyond_img img {
+        margin-top: 20px;
+    }
+
     #contact_second_section h3 {
         font-size: 30px;
     }
