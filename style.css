@@ -7,7 +7,15 @@
     --logo-first-color: #0E2B85;
     --logo-second-color: #0E2B85;
     --yellow-color: #ffee00;
-    --gray-color: #dddddd;
+    --gray-color: #eeeeee;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
 }
 
 ul {
@@ -248,6 +256,9 @@ body {
     font-size: 40px;
     font-weight: 600;
 }
+#why_choose h2 span {
+    color: var(--yellow-color);
+}
 #why_choose .btn {
     outline: 1px solid var(--white-color);
     color: var(--white-color);
@@ -293,6 +304,18 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
     font-weight: 600;
+}
+.module_number{
+    display: flex;
+}
+.module_number h5 {
+    padding: 10px 20px;
+    border: 2px solid var(--yellow-color);
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 20px var(--logo-first-color);
 }
 
 /* Instruction */
@@ -347,6 +370,21 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
     font-weight: 600;
+}
+#faq_right_side {
+    border: 2px dashed var(--logo-second-color);
+    padding: 30px 0;
+    border-radius: 10px;
+    position: sticky;
+    top: 80px;
+}
+#faq_right_side .btn {
+    background-color: var(--logo-first-color);
+    color: var(--white-color);
+    margin-top: 20px;
+}
+#faq_right_side .btn:hover {
+    box-shadow: 0 0 30px var(--logo-second-color);
 }
 
 
@@ -496,23 +534,47 @@ body {
     #home_section #batch_start_date .batch_flex {
         width: 50%;
     }
-    #why_become_section h2 {
+    #about h2 {
         font-size: 30px;
+        margin-bottom: 10px;
     }
     #about_navbar_section {
         display: none;
     }
     #about_four_items {
         height: auto;
+    }
+    #why_become_section h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
     } 
+    #why_choose h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
     #why_choose .card {
         margin-top: 30px;
+    }
+    #our_course h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #our_course img {
+        width: 130px;
     }
     #our_course_four_div_two {
         margin-top: 0px;
     }
     #our_course_four_div_four {
         margin-top: 0px;
+    }
+    #curriculam h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #instructor h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
     }
     #instructor_info {
         display: block !important;
@@ -521,6 +583,20 @@ body {
         margin-top: 30px;
     }
 
+    #testimonial h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #examination h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #faq h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
 
 
     #our_service .service_beyond_img img {
