@@ -39,7 +39,7 @@ body {
 #side_social_media_icon {
     position: fixed;
     top: 150px;
-    z-index: 700;
+    z-index: 999;
 }
 #side_social_media_icon li {
     padding: 8px;
@@ -53,6 +53,47 @@ body {
     color: var(--logo-first-color);
     font-size: 22px;
 }
+
+/* Swiper Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: start;
+    font-size: 18px;
+    background: linear-gradient(330deg, var(--background-color) 60.44%, var(--logo-second-color) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--white-color);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide p{
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .swiper-slide ul {
+    margin: 15px 0;
+  }
+  .swiper-slide ul li {
+    display: inline-block;
+  }
+  .swiper-slide ul li i {
+    color: var(--yellow-color);
+  }
+  .swiper-pagination-bullet {
+    background: var(--white-color) !important;
+  }
 
 
 /* Navbar */
@@ -203,7 +244,7 @@ body {
     background: var(--background-color);
     color: var(--white-color);
     padding: 20px 0;
-    z-index: 999;
+    z-index: 888;
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--yellow-color);
@@ -221,6 +262,10 @@ body {
 .about_navbar_menu ul li a:hover {
     color: var(--yellow-color);
 }
+.about_navbar_menu ul li a.active {
+    color: var(--yellow-color);
+}
+
 
 #about {
    padding: 50px 0; 
@@ -333,7 +378,7 @@ body {
     font-size: 30px;
 }
 #instructor ul li {
-    margin: 8px 0;
+    margin-bottom: 15px;
 }
 #instructor ul li i {
     color: var(--logo-first-color);
@@ -359,6 +404,43 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
     font-weight: 600;
+}
+#examination .examination_first {
+    background: linear-gradient(330deg, var(--background-color) 60.44%, var(--logo-second-color) 100%);
+    padding: 40px;
+    color: var(--white-color);
+    border-radius: 10px;
+}
+#examination .examination_first img {
+    width: 100%;
+    border-radius: 10px;
+}
+#examination .examination_second h5 {
+    font-weight: 700;
+    color: var(--logo-second-color);
+    margin-bottom: 20px;
+}
+#exam_second_left {
+    background-color: var(--gray-color);
+}
+#exam_second_left ul li {
+    margin: 15px 0;
+}
+#exam_second_left ul li i{
+    color: var(--logo-second-color);
+}
+#exam_second_right {
+    background-color: var(--gray-color);
+}
+.examination_third {
+    background: linear-gradient(330deg, var(--background-color) 60.44%, var(--logo-second-color) 100%);
+    margin-top: 30px;
+    padding: 40px 20px;
+    color: var(--white-color);
+    border-radius: 10px;
+}
+.exam_third_right {
+    border-left: 1px solid var(--yellow-color);
 }
 
 
@@ -582,6 +664,11 @@ body {
     #instructor h4 {
         margin-top: 30px;
     }
+    #instructor img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     #testimonial h2 {
         font-size: 30px;
@@ -598,6 +685,31 @@ body {
         margin-bottom: 10px;
     }
 
+    #examination .examination_second .d-flex {
+        display: block !important;
+    }
+    #exam_second_left {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #exam_second_right {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #examination .examination_first {
+        padding: 20px;
+    }
+    .examination_third {
+        padding: 20px;
+    }
+    .exam_third_right {
+        border-top: 1px solid var(--yellow-color);
+        margin-top: 20px;
+        border-left: 0;
+    }
+    .mobile_test_margin {
+        margin-top: 20px;
+    }
 
     #our_service .service_beyond_img img {
         margin-top: 20px;
